@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMI Calculator</title>
+	<style>
+		
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>EMI Calculator</h2>
+		<form>
+			<label for="principal">Principal Loan Amount:</label>
+			<input type="number" id="principal" value="100000">
+			<br><br>
+			<label for="interestRate">Annual Interest Rate (%):</label>
+			<input type="number" id="interestRate" value="10">
+			<br><br>
+			<label for="years">Loan Tenure (years):</label>
+			<input type="number" id="tenure" value="5">
+			<br><br>
+			<button type="button" onclick="calculateEMI()">Calculate EMI</button>
+			<p id="emiResult"></p>
+		</form>
+	</div>
+
+	<script src="scriptEMI.js"></script>
+</body>
+</html>
